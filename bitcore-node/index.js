@@ -14,7 +14,7 @@ var InsightUI = function(options) {
   this.routePrefix = pkg.insightConfig.routePrefix;
 };
 
-InsightUI.dependencies = ['insight-api-monacoin'];
+InsightUI.dependencies = ['insight-api-dongri'];
 
 inherits(InsightUI, BaseService);
 

@@ -8,7 +8,7 @@ angular.module('insight.address').controller('AddressController',
     var addrStr = $routeParams.addrStr;
 
     var _startSocket = function() {
-      socket.on('monacoind/addresstxid', function(data) {
+      socket.on('dongrid/addresstxid', function(data) {
         if (data.address === addrStr) {
           $rootScope.$broadcast('tx', data.txid);
           var base = document.querySelector('base');
@@ -16,11 +16,11 @@ angular.module('insight.address').controller('AddressController',
           beep.play();
         }
       });
-      socket.emit('subscribe', 'monacoind/addresstxid', [addrStr]);
+      socket.emit('subscribe', 'dongrid/addresstxid', [addrStr]);
     };
 
     var _stopSocket = function () {
-      socket.emit('unsubscribe', 'monacoind/addresstxid', [addrStr]);
+      socket.emit('unsubscribe', 'dongrid/addresstxid', [addrStr]);
     };
 
     socket.on('connect', function() {
