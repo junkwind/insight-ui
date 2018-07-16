@@ -75,7 +75,7 @@ msgstr "最良ブロック"
 
 #: public/views/messages_verify.html
 msgid "Dongri comes with a way of signing arbitrary messages."
-msgstr "Dongriには任意のメッセージを署名する昨日が備わっています。"
+msgstr "Dongriには任意のメッセージを署名する機能が備わっています。"
 
 #: public/views/status.html
 msgid "Dongri node information"
@@ -527,7 +527,7 @@ msgstr "トランザクションを待っています..."
 
 #: public/views/block_list.html
 msgid "by date."
-msgstr "日毎。"
+msgstr "( 日別 )"
 
 #: public/views/transaction/tx.html
 msgid "first seen at"
